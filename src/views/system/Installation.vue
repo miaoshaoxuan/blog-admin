@@ -268,7 +268,7 @@ export default {
   },
   beforeMount() {
     this.handleVerifyIsInstall()
-    this.$set(this.installation, 'url', window.location.protocol + '//' + window.location.host)
+    this.$set(this.installation, 'url', `${window.location.protocol}//${window.location.host}`)
   },
   methods: {
     ...mapActions(['installCleanToken']),
